@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aura Design Studio - Premium Website Building, Design, and Custom AI & Coding Projects. You bring the idea, we code and build it.">
+    <title>Aura | Premium Web Design & Custom Development Studio</title>
+    <!-- Google Fonts: Outfit (modern tech/display) and Inter (clean body text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Stars & Constellation Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Silent Lightning/Thunder Glow Layer -->
+    <div id="lightning-flash"></div>
+
+    <!-- Custom Cursor Elements (hidden on mobile) -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-ring"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">AURA</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#waterfall" class="nav-link">Energy Flow</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#portfolio" class="nav-link">Work</a>
+                <a href="#mindset" class="nav-link">Mindset</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-cta-wrapper">
+                <a href="#contact" class="btn btn-outline nav-cta">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- Eyebrow label -->
+                <span class="eyebrow reveal">Web Design & Development Studio</span>
+                
+                <!-- Animated Sliding Headline Container -->
+                <h1 class="headline-container reveal">
+                    <span class="slide-text active">We Build Websites That Build Businesses</span>
+                    <span class="slide-text">Have an Idea? We'll Code It & Build It</span>
+                    <span class="slide-text">From AI Projects to Full Websites — We Deliver</span>
+                </h1>
+
+                <!-- Subtext -->
+                <p class="hero-subtext reveal">
+                    We combine high-end aesthetic design with custom full-stack programming to craft digital products that captivate and convert.
+                </p>
+
+                <!-- Calls to Action -->
+                <div class="hero-actions reveal">
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>
+                </div>
+
+                <!-- Stat Badges -->
+                <div class="stats-grid reveal">
+                    <div class="stat-badge">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-number">120+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support Availability</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Parallax Hologram Area -->
+            <div class="hero-visual reveal">
+                <div class="holo-card" id="holo-card">
+                    <!-- Rotating 3D sphere canvas -->
+                    <canvas id="holo-canvas"></canvas>
+                    
+                    <!-- Floating code/browser window inside -->
+                    <div class="floating-window code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="window-title">aura-ai.js</span>
+                        </div>
+                        <div class="window-content">
+                            <pre><code><span class="keyword">const</span> studio = <span class="string">"Aura"</span>;
+<span class="keyword">function</span> <span class="function">buildFuture</span>(idea) {
+  <span class="keyword">return</span> <span class="keyword">new</span> <span class="class">Promise</span>((resolve) => {
+    <span class="keyword">const</span> product = code(idea);
+    resolve(product);
+  });
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Floating growth chart window inside -->
+                    <div class="floating-window chart-window">
+                        <div class="window-header">
+                            <span class="window-title">Growth Analytics</span>
+                        </div>
+                        <div class="window-content">
+                            <!-- SVG Growth Chart -->
+                            <svg class="chart-svg" viewBox="0 0 200 100">
+                                <defs>
+                                    <linearGradient id="chart-grad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#4fd8ff" stop-opacity="0.4"/>
+                                        <stop offset="100%" stop-color="#4fd8ff" stop-opacity="0.0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path class="chart-area" d="M 10,90 Q 50,60 90,70 T 170,20 L 170,90 L 10,90 Z" fill="url(#chart-grad)" />
+                                <path class="chart-line" d="M 10,90 Q 50,60 90,70 T 170,20" fill="none" stroke="#4fd8ff" stroke-width="2.5" />
+                                <circle cx="170" cy="20" r="4" fill="#7ee8ff" class="chart-dot" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Holographic Scanline Overlay -->
+                    <div class="scanlines"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">What We Do</span>
+                <h2 class="section-title">Engineered For Excellence</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1: Website Design -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#4fd8ff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                            <line x1="9" y1="21" x2="9" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Website Design</h3>
+                    <p class="service-desc">Stunning, high-end interfaces created with user psychology and visual storytelling in mind. We design templates and layouts that leave a lasting impression.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Card 2: Website Development -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#4fd8ff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Website Development</h3>
+                    <p class="service-desc">Robust, responsive, and secure frontend/backend systems. Hand-crafted clean code powered by optimized speed frameworks for a bug-free operation.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Card 3: AI Project Development -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#4fd8ff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">AI Project Development</h3>
+                    <p class="service-desc">Incorporate cutting-edge AI models, custom LLM agents, and smart automated data-scraping workflows to elevate your business capabilities.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Card 4: Custom Coding Projects -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#4fd8ff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18.06 7.06A4.5 4.5 0 0 0 12 3v18a4.5 4.5 0 0 0 6.06-4.06"/>
+                            <path d="M5.94 7.06A4.5 4.5 0 0 1 12 3v18a4.5 4.5 0 0 1-6.06-4.06"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Custom Coding Projects</h3>
+                    <p class="service-desc">You bring the idea, we design, build, and deploy it. From web scrapers, integrations, custom apps, to complex automation backends.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Card 5: E-commerce Websites -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#4fd8ff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">E-commerce Solutions</h3>
+                    <p class="service-desc">Secure shopping carts, optimized high-conversion product pages, inventory management APIs, and seamless global payment gateway integrations.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Card 6: SEO & Speed Optimization -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#4fd8ff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">SEO & Speed Optimization</h3>
+                    <p class="service-desc">Rank higher on Google with semantic coding, web vitals optimization, lightweight scripts, and custom structured schemas built directly in the markup.</p>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waterfall Light Effect Section -->
+    <section id="waterfall" class="waterfall-section">
+        <canvas id="waterfall-canvas"></canvas>
+        <div class="waterfall-overlay">
+            <h2 class="waterfall-title reveal">Flowing Digital Energy</h2>
+            <p class="waterfall-sub reveal">Connecting structural algorithms to fluid user interfaces.</p>
+        </div>
+    </section>
+
+    <!-- Process Timeline Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">Our Workflow</span>
+                <h2 class="section-title">The Path To Creation</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Vertical Line -->
+                <div class="timeline-line">
+                    <div class="timeline-progress"></div>
+                </div>
+
+                <!-- Step 1: Discover -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="step-num">01</span>
+                        <h3 class="step-title">Discover</h3>
+                        <p class="step-desc">We listen to your concept, analyze feasibility, map target audiences, and define product architectures. We turn raw ideas into detailed wireframe roadmaps.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2: Design -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="step-num">02</span>
+                        <h3 class="step-title">Design</h3>
+                        <p class="step-desc">We craft interactive, premium UI/UX high-fidelity mockups. Every layout is tailormade to evoke confidence, trust, and visual marvel.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3: Build -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="step-num">03</span>
+                        <h3 class="step-title">Build</h3>
+                        <p class="step-desc">Our developers translate the approved visuals into pixel-perfect CSS/JS code. Backends, security layers, databases, and third-party APIs are integrated cleanly.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4: Launch -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="step-num">04</span>
+                        <h3 class="step-title">Launch</h3>
+                        <p class="step-desc">We conduct rigorous testing, optimize page speed, configure cloud hosting or CDNs, point custom domains, and deploy the live build to the public.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5: Support -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="step-num">05</span>
+                        <h3 class="step-title">Support</h3>
+                        <p class="step-desc">Our team provides ongoing server maintenance, security patches, analytic checkups, and swift iteration support as your business metrics grow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">Selected Work</span>
+                <h2 class="section-title">Innovation In Action</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-thumbnail">
+                        <!-- High tech grid overlay placeholder -->
+                        <div class="thumbnail-glow-bg bg-1"></div>
+                        <svg class="thumbnail-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <circle cx="50" cy="50" r="30" fill="none" stroke="rgba(79, 216, 255, 0.2)" stroke-width="0.5"/>
+                            <path d="M0,50 L100,50 M50,0 L50,100" stroke="rgba(79, 216, 255, 0.1)" stroke-width="0.5"/>
+                            <line x1="20" y1="20" x2="80" y2="80" stroke="rgba(79, 216, 255, 0.1)" stroke-width="0.5"/>
+                        </svg>
+                        <span class="project-tag">AI / Machine Learning</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Synthetix Agent Hub</h3>
+                        <p class="project-desc">A custom LLM orchestration dashboard built for automated marketing scripts and multi-agent scheduling tasks.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-glow-bg bg-2"></div>
+                        <svg class="thumbnail-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <rect x="25" y="25" width="50" height="50" fill="none" stroke="rgba(79, 216, 255, 0.2)" stroke-width="0.5"/>
+                            <circle cx="50" cy="50" r="15" fill="none" stroke="rgba(79, 216, 255, 0.15)" stroke-width="0.5"/>
+                            <path d="M0,0 L100,100 M100,0 L0,100" stroke="rgba(79, 216, 255, 0.1)" stroke-width="0.5"/>
+                        </svg>
+                        <span class="project-tag">E-Commerce</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Helios Apparel</h3>
+                        <p class="project-desc">Next-generation WebGL-driven digital fashion store featuring responsive cart APIs and interactive 3D elements.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-glow-bg bg-3"></div>
+                        <svg class="thumbnail-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <polygon points="50,15 80,75 20,75" fill="none" stroke="rgba(79, 216, 255, 0.2)" stroke-width="0.5"/>
+                            <circle cx="50" cy="55" r="10" fill="none" stroke="rgba(79, 216, 255, 0.15)" stroke-width="0.5"/>
+                        </svg>
+                        <span class="project-tag">SaaS / Web App</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Verdant Analytics</h3>
+                        <p class="project-desc">Carbon accounting ledger application running on an optimized serverless ecosystem with rapid response curves.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-glow-bg bg-4"></div>
+                        <svg class="thumbnail-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="rgba(79, 216, 255, 0.2)" stroke-width="0.5" stroke-dasharray="2, 2"/>
+                            <polygon points="50,30 65,65 35,65" fill="none" stroke="rgba(79, 216, 255, 0.15)" stroke-width="0.5"/>
+                        </svg>
+                        <span class="project-tag">Custom Tooling</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Apex Scraper Pipeline</h3>
+                        <p class="project-desc">Real-time real-estate data parsing engine outputting clean JSON feeds to client messaging queues instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Mindset Section -->
+    <section id="mindset" class="mindset-section">
+        <div class="container">
+            <div class="mindset-wrapper glass-card reveal">
+                <div class="mindset-content">
+                    <div class="mindset-header">
+                        <!-- Glowing mindset icon -->
+                        <div class="mindset-icon-box">
+                            <svg viewBox="0 0 24 24" width="36" height="36" stroke="#4fd8ff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <span class="eyebrow">Our Philosophy</span>
+                    </div>
+                    <h2 class="mindset-title">Constructing Digital Growth With a Confident Business Mindset</h2>
+                    <p class="mindset-desc">
+                        A website is not just a digital business card — it is the primary engine of your company's growth. We do not just write code or format borders. We analyze conversion ratios, loading latencies, user attention paths, and emotional triggers to construct products that elevate your credibility and capture market share.
+                    </p>
+                    <p class="mindset-sub">
+                        <em>You bring the vision. We build the high-precision machinery that turns it into enterprise success.</em>
+                    </p>
+                    <div class="mindset-points">
+                        <div class="mindset-point">
+                            <span class="point-glow-dot"></span>
+                            <span class="point-text"><strong>Velocity Oriented:</strong> Fast-loading architecture for high SEO indices.</span>
+                        </div>
+                        <div class="mindset-point">
+                            <span class="point-glow-dot"></span>
+                            <span class="point-text"><strong>Conversion Centered:</strong> Wireframes designed around clear user funnels.</span>
+                        </div>
+                        <div class="mindset-point">
+                            <span class="point-glow-dot"></span>
+                            <span class="point-text"><strong>Future Adaptable:</strong> Clean APIs prepared for scaling to new domains.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Helpline Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Info Column -->
+                <div class="contact-info-col reveal">
+                    <span class="subtitle">Get In Touch</span>
+                    <h2 class="section-title text-left">Let's Craft Your Vision</h2>
+                    <p class="contact-intro-text">
+                        Have an idea or a complete project outline? Reach out through our direct hotline links or drop us a message using the workspace secure form.
+                    </p>
+
+                    <div class="helplines-container">
+                        <!-- Direct Call Button -->
+                        <a href="tel:8590134194" class="helpline-btn call-btn">
+                            <div class="helpline-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="helpline-text">
+                                <span class="helpline-label">Direct Hotline Call</span>
+                                <span class="helpline-val">8590134194</span>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp Button -->
+                        <a href="https://wa.me/918590134194" target="_blank" rel="noopener noreferrer" class="helpline-btn whatsapp-btn">
+                            <div class="helpline-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                </svg>
+                            </div>
+                            <div class="helpline-text">
+                                <span class="helpline-label">WhatsApp Chat</span>
+                                <span class="helpline-val">8590134194</span>
+                            </div>
+                        </a>
+
+                        <!-- Email Button -->
+                        <a href="mailto:mhimhikk0@gmail.com" class="helpline-btn email-btn">
+                            <div class="helpline-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="helpline-text">
+                                <span class="helpline-label">Send Us an Email</span>
+                                <span class="helpline-val">mhimhikk0@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <!-- Register Your Idea Button -->
+                        <a href="mailto:mhimhikk0@gmail.com?subject=Project%20Idea%20Registration&body=Hi%20Aura%20Studio%2C%0A%0AHere%20is%20my%20idea%3A%0A%0A" class="helpline-btn idea-btn">
+                            <div class="helpline-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 11l3 3L22 4"/>
+                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                                </svg>
+                            </div>
+                            <div class="helpline-text">
+                                <span class="helpline-label">Submit Your Concept</span>
+                                <span class="helpline-val">Register Your Idea &#8594;</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="contact-form-col reveal">
+                    <form id="contact-form" class="glass-card contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+                        <h3 class="form-title">Send a Message</h3>
+                        
+                        <div class="form-group">
+                            <input type="text" id="form-name" class="form-input" placeholder=" " required autocomplete="name">
+                            <label for="form-name" class="form-label">Your Name</label>
+                            <span class="input-focus-glow"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="form-email" class="form-input" placeholder=" " required autocomplete="email">
+                            <label for="form-email" class="form-label">Your Email</label>
+                            <span class="input-focus-glow"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="form-message" class="form-input text-area" placeholder=" " rows="5" required></textarea>
+                            <label for="form-message" class="form-label">Tell Us About Your Project Idea...</label>
+                            <span class="input-focus-glow"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Submit Request</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-text">AURA</span>
+                    <span class="logo-dot"></span>
+                </a>
+                <p class="footer-tagline">Web Design, Web Building, and Custom Code Projects.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-link-col">
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#process">Process</a>
+                    <a href="#portfolio">Work</a>
+                </div>
+                <div class="footer-link-col">
+                    <h4 class="footer-col-title">Studio Info</h4>
+                    <a href="tel:8590134194">Call: 8590134194</a>
+                    <a href="https://wa.me/918590134194">WhatsApp Chat</a>
+                    <a href="mailto:mhimhikk0@gmail.com">mhimhikk0@gmail.com</a>
+                    <a href="#contact">Get Quotes</a>
+                </div>
+            </div>
+
+            <!-- Social Proximity Container -->
+            <div class="footer-social-wrapper">
+                <h4 class="footer-col-title">Connect</h4>
+                <div class="social-icons" id="social-proximity-container">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span class="icon-glow"></span>
+                    </a>
+                    
+                    <!-- X (Twitter) -->
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                        </svg>
+                        <span class="icon-glow"></span>
+                    </a>
+                    
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        <span class="icon-glow"></span>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                        <span class="icon-glow"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">&copy; 2026 AURA Design Studio. All rights reserved. Code and Build services are tailored to client specifics.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external script -->
+    <script src="script.js"></script>
+</body>
+</html>
